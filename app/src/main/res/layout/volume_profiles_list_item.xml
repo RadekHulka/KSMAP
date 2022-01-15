@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:foregroundTint="@color/black"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Profile name"
+            android:textColor="@color/grey"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Média"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_alignParentRight="@+id/txtMedia"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMedia"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Notifikace"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMedia"
+            android:layout_alignParentRight="@+id/txtNotification"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtRinging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNotification"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Vyzvánění"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarRinging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNotification"
+            android:layout_alignParentRight="@+id/txtRinging"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRinging"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Hovor"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRinging"
+            android:layout_alignParentRight="@+id/txtCall"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCall"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Systém"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCall"
+            android:layout_alignParentRight="@+id/txtSystem"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSystem"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Alarm"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSystem"
+            android:layout_alignParentRight="@+id/txtAlarm"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonActive"
+            android:layout_width="113dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="start"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="175dp"
+            android:layout_toEndOf="@+id/txtName"
+            android:layoutDirection="rtl"
+            android:text="Aktivní"
+            android:textColor="@color/grey"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Název"
+            android:layout_marginStart="28dp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="14dp"
+            android:text="Média"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarMedia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_alignParentRight="@+id/txtMedia"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMedia"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Notifikace"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtMedia"
+            android:layout_alignParentRight="@+id/txtNotification"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtRinging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNotification"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Vyzvánění"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarRinging"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtNotification"
+            android:layout_alignParentRight="@+id/txtRinging"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRinging"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Hovor"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRinging"
+            android:layout_alignParentRight="@+id/txtCall"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtSystem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCall"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Systém"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCall"
+            android:layout_alignParentRight="@+id/txtSystem"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia" />
+
+        <TextView
+            android:id="@+id/txtAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSystem"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Alarm"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seekBarAlarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtSystem"
+            android:layout_alignParentRight="@+id/txtAlarm"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="28dp"
+            android:layout_toEndOf="@+id/txtMedia"/>
+
+        <TextView
+            android:id="@+id/txtLatitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAlarm"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Latitude"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_below="@+id/txtAlarm"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="40dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:layout_toEndOf="@+id/txtMedia"
+            android:hint="12.345"
+            android:ems="10"
+            android:textSize="14dp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/txtLongitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLatitude"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Longitude"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_below="@+id/txtLatitude"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="40dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:layout_toEndOf="@+id/txtMedia"
+            android:hint="12.345"
+            android:ems="10"
+            android:textSize="14dp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/txtFromMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtLongitude"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Od"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextFromMin"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_below="@+id/txtLongitude"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="40dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:layout_toEndOf="@+id/txtMedia"
+            android:hint="12:34"
+            android:ems="10"
+            android:textSize="14dp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:id="@+id/txtToMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtFromMin"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:text="Do"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextToMin"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_below="@+id/txtFromMin"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="40dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:layout_toEndOf="@+id/txtMedia"
+            android:hint="12:34"
+            android:ems="10"
+            android:textSize="14dp"
+            android:textColor="@color/grey"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxMonday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtToMin"
+            android:layout_alignParentStart="true"
+            android:text="Pondělí"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxTuesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxMonday"
+            android:layout_alignParentStart="true"
+            android:text="Úterý"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWednesday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxTuesday"
+            android:layout_alignParentStart="true"
+            android:text="Středa"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxthursday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxWednesday"
+            android:layout_alignParentStart="true"
+            android:text="Čtvrtek"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFriday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxthursday"
+            android:layout_alignParentStart="true"
+            android:text="Pátek"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxSaturday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxFriday"
+            android:layout_alignParentStart="true"
+            android:text="Sobota"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkSunday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkBoxSaturday"
+            android:layout_alignParentStart="true"
+            android:text="Neděle"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="0dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/checkBoxSaturday"
+            android:text="Uložit" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
